@@ -1,7 +1,9 @@
+/* NavBar css */
 .navbar-custom{
 height:6em;
 position: relative;
 }
+/* after to draw horizontal line */
 .navbar-custom::after {
     content: "";
     display: block;
@@ -23,8 +25,13 @@ position: relative;
     width:4%;
 }
 .navbar-nav {
-    margin-left:49px; /* Adjust the value as needed */
+    margin-left:49px;
   }
+  /* Add space between the dropdown items */
+  .dropdown-menu {
+    margin-top: 10px;
+  }
+/* body containers Css */
 .container-1{
     display: flex;
     flex-wrap:wrap;
@@ -43,10 +50,6 @@ position: relative;
     margin-left: 15%;
 }
 
-  /* Add space between the dropdown items */
-  .dropdown-menu {
-    margin-top: 10px; /* Adjust the value as needed */
-  }
 .paragraph-1{
     color:rgb(82, 82, 255);
     font-size:larger;
@@ -67,6 +70,7 @@ position: relative;
 .line{
     color: gray;
 }
+/* Cards container css  */
 .displaycards{
 display: flex;
 justify-content: space-around;
@@ -76,9 +80,12 @@ margin-top:2%;
 .heading-2{
     font-weight: bold;
 }
+/* Cards css */
 .card1{
     color: gray;
 }
+
+/* For responsiveness */
   @media (max-width: 974px) {
     .custom-button{
         display: none;

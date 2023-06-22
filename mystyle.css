@@ -1,0 +1,41 @@
+.Container{
+    background-color:gray;
+    height:570px;
+    width: 430px;
+    border-radius: 20px;
+    border: 2px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.Display{
+    background-color:white;
+    z-index: 1;
+    margin-top:-1%;
+    height:15%;
+}
+.text1{
+    text-decoration: blanchedalmond;
+
+}
+.operations{
+    margin-top: 5%;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5,1fr); /* Adjusted grid-template-columns */
+    grid-template-rows: repeat(5,17%); 
+    
+}
+.operations button{
+    margin-top:3%;
+    width: 94%;
+}
+.clear{
+    background-color: red;
+    height:100%;
+}
+.result{
+    float: right;
+}

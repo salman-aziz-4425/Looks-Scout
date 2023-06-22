@@ -1,6 +1,16 @@
 .navbar-custom{
-    height: 10vh;
+height:6em;
+position: relative;
 }
+.navbar-custom::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 220, 220);
+  }
 .custom-nav-link{
     font-weight:lighter;
     font-size: large;

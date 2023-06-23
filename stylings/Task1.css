@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
 }
+body { 
+	max-width: 1440px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+}
+.nav{
+    max-width:1440px;
+}
 /* NavBar custom css used alongside bootstrap(section 1) */
 .navbar-custom{
 height:6em;
 position: relative;
-z-index: 2;
+z-index:2;
 }
 /* after to draw horizontal line */
 .navbar-custom::after {
@@ -100,7 +108,7 @@ margin-bottom: 2%;
 
 }
 .paragraph-container{
-    width:100%
+    width:80%
 }
 
 /* Section 4 */
@@ -118,11 +126,13 @@ margin-bottom: 2%;
     color:#B1CCFB;
     font-size: large;
 }
-.subcontainer-2{
+.subcontainer-2 {
     display: grid;
-    grid-template-columns:auto auto auto;
-    padding:4% 4% 0% 5%;
-}
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 3% 2% 0% 5%; /* Adjusted padding */
+  }
 .card-2{
     display: flex;
     flex-direction: column;
@@ -134,7 +144,6 @@ margin-bottom: 2%;
     text-align: start;
     background-color:#3971E7;
     margin-bottom: 6%;
-    width: 80%;
 }
 .sub-card-container-1{
     display: flex;
@@ -148,8 +157,9 @@ margin-bottom: 2%;
 
 /* section 5 */
 .container-4{
+    margin-bottom: 0%;
     background-color: white;
-    padding: 5%;
+    padding: 5% 8% 4% 5%;
 }
 .subcontainer-3{
     margin-left: 0;
@@ -162,8 +172,129 @@ margin-bottom: 2%;
     width:50%;
     font-size: xx-large;
 }
+.heading-5{
+    font-weight: bolder;
+    font-size:2.5em;
+    
+}
+.paragraph-4{
+    color:#5F6D7E;
+    width:100%;
+    margin-bottom: 4%;
+}
+.container-5{
+
+    background-color: white;
+    text-align: center;
+    padding: 4%;
+}
+.subcontainer-4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:4% 0% 0 9%;
+}
+.card-3{
+    display: flex;
+    margin-bottom:6%;
+}
+.sub-card-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:start;
+    padding:2% 2% 0 2%
+}
+.paragraph-container-3{
+    width:70%;
+    color: gray;
+}
+.sub-card-container-4{
+    display: flex;
+    width:100%;
+    justify-content:start;
+}
+.tabulartitle{
+    width:15%;
+    color: #5F6D7E;
+}
+.sub-card-container-5{
+display: flex;
+flex-direction: column;
+border: 1px solid #EAEBF0;
+border-radius: 5px;
+}
+.container-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#2B63D9;
+    text-align: center;
+    padding: 4%;
+}
+.tabular-row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #EAEBF0;
+    padding: 2% 2% 1% 2%;
+    width: 100%;
+}
+.heading-8{
+    color: white;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.subTab-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+.heading-6{
+    font-size:larger;
+    font-weight:500;
+}
+.downarrow{
+    margin-left:10%;
+}
+.subTab-2{
+    flex: 1;
+}
+.tab-button{
+    background-color: #F5FAFF;
+    border: none;
+    border-radius:2px;
+    text-align: center;
+    width: 4%;
+    padding:0.1% 0% 0.1% 0%;
+    height: 4%;
+    color: #437EF7;
+}
+.heading-7{
+    font-size:medium;
+    font-weight:lighter;
+    flex: 1S;
+}
+.subtabular-2{
+    display: flex;
+    justify-content:flex-end;
+    text-align: center;
+}
+.tabular-row-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #EAEBF0;
+    padding: 2% 1% 1% 2%;
+    width: 100%;
+}
+.custom-button-3{
+    display: none;
+}
 /* For responsiveness */
-@media (max-width:412px) {
+@media (max-width:454px) {
     .heading-1{
         font-weight:bold;
     }
@@ -175,13 +306,21 @@ margin-bottom: 2%;
     .custom-button{
         display: none;
     }
-
+    .paragraph-4{
+        color:#5F6D7E;
+        width:100%;
+    }
     .container-1{
         display: flex;
         flex-direction: column-reverse;
         flex-wrap:wrap;
         justify-content:start;
         overflow: hidden;
+    }
+    .heading-5{
+        font-weight: bolder;
+        font-size:1.5em;
+        
     }
     .subimage-1{
         max-width: 100%; /* Ensures the container adjusts to its parent's width */
@@ -205,6 +344,9 @@ margin-bottom: 2%;
         height:max-content;
         margin-left:auto;
     }
+    .subtabular-2{
+        display: none;
+    }
     .paragraph-2{
         color: rgb(124, 124, 124);
         font-size:80%;
@@ -222,7 +364,7 @@ margin-bottom: 2%;
          .subcontainer-2{
             display: grid;
             grid-template-columns:auto;
-            padding:4% 2%;
+            padding:3% 5% 0 7%;
         }
         .heading-3{
             font-weight: bold;
@@ -249,19 +391,37 @@ margin-bottom: 2%;
         .card-2{
             width:90%;
         }
+        .card-3{
+            display: flex;
+            flex-direction: column;
+            margin-bottom:6%;
+        }
+        .subcontainer-4{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding:4% 3% 0 3%
+        }
+        .paragraph-container-3{
+            width:100%;
+        }
+        .custom-button-2{
+            width:90%;
+        }
+        .custom-button-3{
+            display: block;
+        }
 }
-  @media (max-width:1242px) and (min-width: 413px){
+  @media (max-width:1242px) and (min-width: 454px){
     .custom-button{
         display: none;
     }
     .container-1{
         display: flex;
         flex-direction: column-reverse;
-        flex-wrap:wrap;
-        justify-content:start;
-        text-align: center;
-        align-items:center;
-        margin-left: 0%;
+        flex-wrap: wrap;
+        justify-content: start;
+        text-align: start;
+        align-items: start;
     }
     .buttons{
         display: flex;
@@ -274,7 +434,6 @@ margin-bottom: 2%;
         align-items:start;
         text-align:start;
         height:max-content;
-        margin-left: -28%;
     }
     .subcontainer-3{
         margin-left:0%;
@@ -287,7 +446,7 @@ margin-bottom: 2%;
         margin-left:3%;
         padding:4%;
         }
-        .paragraph-2{
+    .paragraph-2{
             color: rgb(124, 124, 124);
     font-size:medium;
     white-space:break-spaces;
@@ -300,7 +459,7 @@ margin-bottom: 2%;
           .subcontainer-2{
             display: grid;
             grid-template-columns:auto auto;
-            padding: 4% 0% 0 4%;
+            padding:4% 2% 0 4%;
         }
         .card-2{
             width:42vw;
@@ -309,7 +468,27 @@ margin-bottom: 2%;
             display: flex;
             flex-direction: column;
             flex-direction:row-reverse;
+            align-items: center;
+            justify-content: center;
             background-color: white;
-            padding: 5%;
+        }
+        .heading-4{
+            width:100%;
+        }
+        .subimage-2{
+            width: 100%;
+            object-fit: contain;
+        }
+        .paragraph-container-3{
+            width:80%;
+            color: gray;
+        }
+        .subtabular-2{
+            display: none;
+        }
+        .subcontainer-4{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding:4% 0% 0 9%;
         }
   }

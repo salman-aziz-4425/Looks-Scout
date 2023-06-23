@@ -43,6 +43,7 @@ position: relative;
     text-align: center;
     align-items:center;
     background-color: rgb(248, 247, 247);
+    margin-bottom: 4%;
 }
 .subcontainer-1{
     display: flex;
@@ -80,8 +81,9 @@ position: relative;
 /* Cards container css  */
 .displaycards{
 display: flex;
-padding:2%;
-justify-content: space-around;
+justify-content:center;
+align-content: center;
+margin-bottom: 2%;
 }
 .heading-2{
     font-weight: bold;
@@ -89,7 +91,25 @@ justify-content: space-around;
 /* Cards css */
 .card-1{
    box-sizing: border-box;
+   width:30%;
+   margin-left: 6%;
 
+}
+.paragraph-container{
+    width:80%
+}
+.container-3{
+    background-color:#2B63D9;
+    text-align: center;
+    padding: 5%;
+}
+.heading-3{
+    font-weight: bold;
+    color:white;
+}
+.paragraph-3{
+    color:#B1CCFB;
+    font-size: large;
 }
 
 /* For responsiveness */
@@ -113,7 +133,7 @@ justify-content: space-around;
     .buttons{
         display: flex;
         flex-direction: column;
-        width:-moz-available;
+        width: 100%;
     }
     .subcontainer-1{
         display: flex;
@@ -133,9 +153,7 @@ justify-content: space-around;
     .displaycards{
         display: flex;
         justify-content: flex-start;
-        padding: 3%;
         flex-wrap: wrap;
-        margin-top:2%;
         }
         .card-1{
            width:80%;
@@ -181,4 +199,8 @@ justify-content: space-around;
     white-space:break-spaces;
     box-sizing: border-box;
         }
+        .card-1{
+            width:100%;
+          
+          }
   }

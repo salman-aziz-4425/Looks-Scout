@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* NavBar custom css used alongside bootstrap */
 .navbar-custom{
 height:6em;
@@ -49,15 +53,18 @@ position: relative;
     height:max-content;
     margin-left: 15%;
 }
-
+.subimage-1{
+    max-width: 100%; /* Ensures the image scales down if needed */
+    max-height: 100%; 
+}
 .paragraph-1{
     color:rgb(82, 82, 255);
     font-size:larger;
 }
 .paragraph-2{
     color: rgb(124, 124, 124);
-    white-space: nowrap;
     font-size:medium;
+    white-space:break-spaces;
     
 }
 .heading-1{
@@ -73,20 +80,20 @@ position: relative;
 /* Cards container css  */
 .displaycards{
 display: flex;
+padding:2%;
 justify-content: space-around;
-flex-wrap: wrap;
-margin-top:2%;
 }
 .heading-2{
     font-weight: bold;
 }
 /* Cards css */
-.card1{
-    color: gray;
+.card-1{
+   box-sizing: border-box;
+
 }
 
 /* For responsiveness */
-  @media (max-width: 974px) {
+@media (max-width:412px) {
     .custom-button{
         display: none;
     }
@@ -94,18 +101,84 @@ margin-top:2%;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap:wrap;
-        justify-content:center;
-        text-align: center;
-        align-items:center;
+        justify-content:start;
     }
     .subimage-1{
-        flex:1;
-        width:100vw;
-        object-fit: contain;
-        margin-bottom:5%;
+        max-width: 100%; /* Ensures the container adjusts to its parent's width */
+        max-height: 100vh; /* Limits the container's height to the viewport height */
+        overflow: hidden; 
+
+
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        width:-moz-available;
+    }
+    .subcontainer-1{
+        display: flex;
+        padding:5%;
+        flex-direction: column;
+        justify-items: center;
+        align-items:start;
+        text-align:start;
+        height:max-content;
+        margin-left:auto;
+    }
+    .paragraph-2{
+        color: rgb(124, 124, 124);
+        font-size:80%;
+        
+    }
+    .displaycards{
+        display: flex;
+        justify-content: flex-start;
+        padding: 3%;
+        flex-wrap: wrap;
+        margin-top:2%;
+        }
+        .card-1{
+           width:80%;
+         
+         }
+}
+  @media (max-width: 768px) and (min-width: 413px){
+    .custom-button{
+        display: none;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        justify-content:start;
+        text-align: center;
+        align-items:center;
     }
     .buttons{
         display: flex;
         margin-bottom:5%;
     }
+    .subcontainer-1{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items:start;
+        text-align:start;
+        height:max-content;
+        margin-left: -20%;
+    }
+    .displaycards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        align-items: center;/* Align items horizontally to the center */
+        margin-left:3%;
+        padding:4%;
+        }
+        .paragraph-2{
+            color: rgb(124, 124, 124);
+    font-size:medium;
+    white-space:break-spaces;
+    box-sizing: border-box;
+        }
   }

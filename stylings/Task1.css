@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
 }
-/* NavBar custom css used alongside bootstrap */
+/* NavBar custom css used alongside bootstrap(section 1) */
 .navbar-custom{
 height:6em;
 position: relative;
+z-index: 2;
 }
 /* after to draw horizontal line */
 .navbar-custom::after {
@@ -26,7 +27,7 @@ position: relative;
 }
 
 .custom-button{
-    width:4%;
+    width:5%;
 }
 .navbar-nav {
     margin-left:49px;
@@ -36,6 +37,7 @@ position: relative;
     margin-top: 10px;
   }
 /* body containers Css */
+/* Section 2 */
 .container-1{
     display: flex;
     flex-wrap:wrap;
@@ -52,7 +54,7 @@ position: relative;
     align-items:start;
     text-align:start;
     height:max-content;
-    margin-left: 15%;
+    margin-left:6%;
 }
 .subimage-1{
     max-width: 100%; /* Ensures the image scales down if needed */
@@ -69,7 +71,7 @@ position: relative;
     
 }
 .heading-1{
-    font-weight:bolder
+    font-weight:bolder;
 }
 .buttons{
     display: flex;
@@ -79,10 +81,13 @@ position: relative;
     color: gray;
 }
 /* Cards container css  */
+/* Section 3 */
 .displaycards{
 display: flex;
 justify-content:center;
+align-items: center;
 align-content: center;
+padding: 0px 2% 0% 5%;
 margin-bottom: 2%;
 }
 .heading-2{
@@ -92,16 +97,18 @@ margin-bottom: 2%;
 .card-1{
    box-sizing: border-box;
    width:30%;
-   margin-left: 6%;
 
 }
 .paragraph-container{
-    width:80%
+    width:100%
 }
+
+/* Section 4 */
 .container-3{
     background-color:#2B63D9;
     text-align: center;
-    padding: 5%;
+    justify-items: center;
+    padding: 5% 5% 0% 0%;
 }
 .heading-3{
     font-weight: bold;
@@ -111,9 +118,42 @@ margin-bottom: 2%;
     color:#B1CCFB;
     font-size: large;
 }
+.subcontainer-2{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    padding:4% 0% 0% 5%;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 10px;
+    margin-left: 4%;
+    padding:6%;
+    text-align: start;
+    background-color:#3971E7;
+    margin-bottom: 6%;
+    width: 80%;
+}
+.sub-card-container-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+.sub-heading-1{
+    font-weight: bold;
+    color: white;
+}
+
+/* section 5 */
+
 
 /* For responsiveness */
 @media (max-width:412px) {
+    .heading-1{
+        font-weight:bold;
+    }
     .custom-button{
         display: none;
     }
@@ -122,12 +162,14 @@ margin-bottom: 2%;
         flex-direction: column-reverse;
         flex-wrap:wrap;
         justify-content:start;
+        overflow: hidden;
     }
     .subimage-1{
         max-width: 100%; /* Ensures the container adjusts to its parent's width */
         max-height: 100vh; /* Limits the container's height to the viewport height */
         overflow: hidden; 
-
+        transform: rotate(1deg);
+        z-index: 1;
 
     }
     .buttons{
@@ -159,8 +201,31 @@ margin-bottom: 2%;
            width:80%;
          
          }
+         .subcontainer-2{
+            display: grid;
+            grid-template-columns:auto;
+            padding:4% 2%;
+        }
+        .heading-3{
+            font-weight: bold;
+            color:white;
+            font-size:larger;
+        }
+        .container-3{
+            padding: 5% 0% 0% 0%;
+        }
+        .paragraph-3{
+            color:#B1CCFB;
+            font-size:small;
+        }
+        .paragraph-container-2{
+            text-align: center;
+        }
+        .card-2{
+            width:90%;
+        }
 }
-  @media (max-width: 768px) and (min-width: 413px){
+  @media (max-width:1242px) and (min-width: 413px){
     .custom-button{
         display: none;
     }
@@ -183,7 +248,7 @@ margin-bottom: 2%;
         align-items:start;
         text-align:start;
         height:max-content;
-        margin-left: -20%;
+        margin-left: -28%;
     }
     .displaycards{
         display: grid;
@@ -203,4 +268,12 @@ margin-bottom: 2%;
             width:100%;
           
           }
+          .subcontainer-2{
+            display: grid;
+            grid-template-columns:auto auto;
+            padding: 4% 0% 0 4%;
+        }
+        .card-2{
+            width:42vw;
+        }
   }

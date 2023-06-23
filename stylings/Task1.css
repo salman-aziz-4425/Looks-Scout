@@ -40,7 +40,6 @@ z-index: 2;
 /* Section 2 */
 .container-1{
     display: flex;
-    flex-wrap:wrap;
     justify-content:space-between;
     text-align: center;
     align-items:center;
@@ -158,14 +157,25 @@ margin-bottom: 2%;
 .subimage-2{
     transform: rotate(0deg);
 }
+.heading-4{
+    font-weight:bold;
+    width:50%;
+    font-size: xx-large;
+}
 /* For responsiveness */
 @media (max-width:412px) {
     .heading-1{
         font-weight:bold;
     }
+    .heading-4{
+        font-weight:bold;
+        font-size: xx-large;
+        width: 92%;
+    }
     .custom-button{
         display: none;
     }
+
     .container-1{
         display: flex;
         flex-direction: column-reverse;
@@ -251,6 +261,7 @@ margin-bottom: 2%;
         justify-content:start;
         text-align: center;
         align-items:center;
+        margin-left: 0%;
     }
     .buttons{
         display: flex;
@@ -264,6 +275,9 @@ margin-bottom: 2%;
         text-align:start;
         height:max-content;
         margin-left: -28%;
+    }
+    .subcontainer-3{
+        margin-left:0%;
     }
     .displaycards{
         display: grid;
@@ -290,5 +304,12 @@ margin-bottom: 2%;
         }
         .card-2{
             width:42vw;
+        }
+        .container-4{
+            display: flex;
+            flex-direction: column;
+            flex-direction:row-reverse;
+            background-color: white;
+            padding: 5%;
         }
   }

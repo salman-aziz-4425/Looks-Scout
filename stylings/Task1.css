@@ -412,7 +412,7 @@ body {
   .heading-3 {
     font-weight: bold;
     color: white;
-    font-size: larger;
+    font-size: revert;
   }
   .tabular-row-1{
     font-size: medium;
@@ -498,7 +498,7 @@ body {
     text-align: start;
     margin-left:8%;
   }
-  .frequency-break {
+  .line-break {
     display: none;
   }
   .buttons-container {
@@ -517,12 +517,16 @@ body {
     display: none;
   }
   .container-1 {
-    display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
     justify-content: start;
     text-align: start;
     align-items: start;
+  }
+  .subimage-1 {
+    width: 100%;
+  }
+  .container-5{
+    padding: 3% 3% 0 3%;
   }
   .buttons {
     display: flex;
@@ -570,10 +574,13 @@ body {
   .container-4 {
     display: flex;
     flex-direction: column;
-    flex-direction: row-reverse;
+
     align-items: center;
     justify-content: center;
     background-color: white;
+  }
+  .line-break {
+    display: none;
   }
   .heading-4 {
     width: 100%;
@@ -599,7 +606,7 @@ body {
     margin: 1% 21% 6% 9%;
   }
   .sub-card-container-7-image {
-    object-fit: contain;
+
     width: 30%;
     margin-bottom: 3%;
   }
@@ -610,28 +617,15 @@ body {
   }
 
   .input-field {
-    flex: 1;
     padding: 2%;
-    background-color: #2c3444;
-    border: none;
     color: #a5acba;
     font-size: medium;
-    border-radius: 5px;
-    outline: none;
-    width: 16vw;
   }
 
   .input-button {
     text-align: center;
     height: 100%;
     width: 18%;
-    background-color: #2b63d9;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     right: 0;
   }
   .custom-button-3 {

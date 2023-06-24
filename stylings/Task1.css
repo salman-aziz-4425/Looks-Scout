@@ -154,12 +154,9 @@ body {
   background-color: white;
   padding: 5% 8% 4% 5%;
 }
-.subcontainer-3 {
-  margin-left: 0;
-}
 .heading-4 {
   font-weight: bold;
-  width: 50%;
+ width: 86%;
   font-size: xx-large;
 }
 .heading-5 {
@@ -347,7 +344,7 @@ body {
   }
   .heading-4 {
     font-weight: bold;
-    font-size: xx-large;
+    font-size: x-large;
     width: 92%;
   }
   .custom-button {
@@ -362,7 +359,6 @@ body {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: start;
-    overflow: hidden;
   }
   .heading-5 {
     font-weight: bolder;
@@ -377,7 +373,6 @@ body {
   .buttons {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
   .subcontainer-1 {
     display: flex;
@@ -435,6 +430,9 @@ body {
     flex-direction: row-reverse;
     background-color: white;
     padding: 5%;
+  }
+  .container-5{
+    padding: 4% 4% 0 4%;
   }
   .paragraph-container-2 {
     text-align: center;

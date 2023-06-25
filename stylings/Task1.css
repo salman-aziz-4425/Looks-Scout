@@ -316,7 +316,7 @@ body {
   font-size: medium;
   border-radius: 5px;
   outline: none;
-  width: 16vw;
+  width:292px;
 }
 
 .input-button {
@@ -373,6 +373,7 @@ body {
   .buttons {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .subcontainer-1 {
     display: flex;
@@ -507,7 +508,7 @@ body {
     flex-direction: column;
   }
   .heading-8{
-    font-size: larger;
+    font-size: x-large;
   }
 }
 @media (max-width:768px) and (min-width: 454px) {

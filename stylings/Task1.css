@@ -15,6 +15,7 @@ body {
   height: 6em;
   position: relative;
   z-index: 2;
+  background-color: #F8F9FB;
 }
 /* after to draw horizontal line */
 .navbar-custom::after {
@@ -49,7 +50,7 @@ body {
   text-align: center;
   align-items: center;
   flex: 1;
-  background-color: rgb(248, 247, 247);
+  background-color: #F8F9FB;
   margin-bottom: 4%;
 }
 .subcontainer-1 {
@@ -110,7 +111,7 @@ body {
   background-color: #2b63d9;
   text-align: center;
   justify-items: center;
-  padding: 3% 1% 0% 0%;
+  padding: 2% 3% 2% 2%;
 }
 .heading-3 {
   font-weight: bold;
@@ -142,6 +143,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4%;
+  height: 48px
 }
 .sub-heading-1 {
   font-weight: bold;
@@ -336,7 +338,10 @@ body {
   border-bottom: 1px solid #2e3545;
   width: 80%;
 }
-
+.subcontainer-3 {
+  margin-left: 0%;
+  width: 45%;
+}
 /* For responsiveness */
 @media (max-width: 454px) {
   .heading-1 {
@@ -404,6 +409,9 @@ body {
     display: grid;
     grid-template-columns: auto;
     padding: 3% 4% 4% 5%;
+  }
+  .subcontainer-3{
+    width:100%;
   }
   .heading-3 {
     font-weight: bold;
@@ -519,7 +527,7 @@ body {
     flex-direction: column-reverse;
     justify-content: start;
     text-align: start;
-    align-items: start;
+    align-items: star4% 0% 6% 2%t;
   }
   .subimage-1 {
     width: 100%;
@@ -565,7 +573,10 @@ body {
   .subcontainer-2 {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 4% 4% 6% 5%;
+    padding:4% 0% 6% 2%;
+  }
+  .subcontainer-3{
+    width:100%;
   }
   .card-2 {
     width: 42vw;
